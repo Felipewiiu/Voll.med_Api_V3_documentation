@@ -48,6 +48,6 @@ Projeto desenvolvido por [Alura](https://www.alura.com.br) e utilizado nos curso
 Instrutor: [Rodrigo Ferreira](https://cursos.alura.com.br/user/rodrigo-ferreira)
 
 ---
-#   V o l l . m e d _ A p i _ V 3 _ d o c u m e n t a t i o n 
+#   V o l l . m e d _ A p i _ V 3 _ 
  
  
