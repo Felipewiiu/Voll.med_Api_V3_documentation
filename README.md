@@ -48,6 +48,10 @@ Projeto desenvolvido por [Alura](https://www.alura.com.br) e utilizado nos curso
 Instrutor: [Rodrigo Ferreira](https://cursos.alura.com.br/user/rodrigo-ferreira)
 
 ---
+
+## Como injetar um conjunto de classes em um serviço?
+
+
 #   V o l l . m e d _ A p i _ V 3 _ 
  
  

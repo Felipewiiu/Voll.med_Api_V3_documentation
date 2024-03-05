@@ -33,5 +33,10 @@ public class Consulta {
     private Paciente paciente;
 
     private LocalDateTime data;
+    private MotivoCancelamento motivoCancelamento;
+
+    public void cancelar (MotivoCancelamento motivo){
+        this.motivoCancelamento = motivo;
+    }
 
 }
