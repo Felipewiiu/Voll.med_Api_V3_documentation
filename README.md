@@ -38,6 +38,7 @@ As seguintes tecnologias foram utilizadas no desenvolvimento da API Rest do proj
 - **[Hibernate](https://hibernate.org)**
 - **[Flyway](https://flywaydb.org)**
 - **[Lombok](https://projectlombok.org)**
+- **[Swagger](https://springdoc.org/)**
 
 ---
 
@@ -50,6 +51,8 @@ Instrutor: [Rodrigo Ferreira](https://cursos.alura.com.br/user/rodrigo-ferreira)
 ---
 
 ## Como injetar um conjunto de classes em um serviço?
+
+## SpringDoc
 
 
 #   V o l l . m e d _ A p i _ V 3 _ 
