@@ -7,7 +7,7 @@ import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import med.voll.api.domain.endereco.DadosEndereco;
 
-public record DadosCadatroPaciente(
+public record DadosCadastroPaciente(
         @NotNull(message = "O campo id não pode ser nulo")
         Long id,
         @NotBlank(message = "O campo nome não pode estar em branco")

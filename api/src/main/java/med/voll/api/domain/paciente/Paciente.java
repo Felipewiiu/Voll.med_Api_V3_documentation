@@ -25,7 +25,7 @@ public class Paciente {
     private Endereco endereco;
     private Boolean ativo = true;
 
-    public Paciente(DadosCadatroPaciente dados){
+    public Paciente(DadosCadastroPaciente dados){
         this.nome = dados.nome();
         this.email = dados.email();
         this.telefone = dados.telefone();
