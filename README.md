@@ -58,6 +58,16 @@ Instrutor: [Rodrigo Ferreira](https://cursos.alura.com.br/user/rodrigo-ferreira)
 
 ## SpringDoc
 
+## Tipos de testes automatizados
+
+1. Testes de Unidade (Unit Tests):
+Testes que verificam a funcionalidade de unidades isoladas de código, como métodos ou classes individuais. Para APIs,
+isso pode incluir testes de métodos que processam entradas e produzem saídas esperadas.
+
+2. Testes de Integração (Integration Tests):
+Testes que verificam a interação entre diferentes partes do sistema. Para APIs, isso envolve testar se os componentes da
+API funcionam corretamente em conjunto.
+
 ## Testes automatizados
 
 Imagine que você está construindo uma casa. Durante a construção, você precisa testar cada etapa para garantir que tudo
@@ -77,7 +87,19 @@ si.
 1. Para se testatar uma classe é preciso avisar ao spring com uma notação ``@DataJpaTest``
 2. Apontar qual aplication.properties ele deve se referenciar para os testes ``@AutoConfigureTestDatabase``
 3. Criar o banco de testes que no caso é o *[application-test]*
-4. 
+
+## Testando uma classe controller
+
+para testar o Controller no Spring Boot, que é responsável por receber as requisições dos
+clientes na API e chamar as classes que executam as regras de negócio e persistência. Utilizamos a classe MockMvc do
+Spring para simular requisições HTTP e testamos o cenário em que uma requisição inválida é feita para agendar uma
+consulta, verificando se o código de resposta é 400. Além disso, utilizei a anotação @WithMockUser para simular um
+usuário logado durante o teste.
+
+**Detalhes**
+
+1. Para subir o contesto completo do spring é necessário usar a anotação ``@SpringBootTest``
+2.
 
 # V o l l . m e d _ A p i _ V 3 _ 
  
