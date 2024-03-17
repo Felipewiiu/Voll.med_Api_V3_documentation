@@ -61,12 +61,13 @@ Instrutor: [Rodrigo Ferreira](https://cursos.alura.com.br/user/rodrigo-ferreira)
 ## Tipos de testes automatizados
 
 1. Testes de Unidade (Unit Tests):
-Testes que verificam a funcionalidade de unidades isoladas de código, como métodos ou classes individuais. Para APIs,
-isso pode incluir testes de métodos que processam entradas e produzem saídas esperadas.
+   Testes que verificam a funcionalidade de unidades isoladas de código, como métodos ou classes individuais. Para APIs,
+   isso pode incluir testes de métodos que processam entradas e produzem saídas esperadas.
 
 2. Testes de Integração (Integration Tests):
-Testes que verificam a interação entre diferentes partes do sistema. Para APIs, isso envolve testar se os componentes da
-API funcionam corretamente em conjunto.
+   Testes que verificam a interação entre diferentes partes do sistema. Para APIs, isso envolve testar se os componentes
+   da
+   API funcionam corretamente em conjunto.
 
 ## Testes automatizados
 
@@ -99,7 +100,23 @@ usuário logado durante o teste.
 **Detalhes**
 
 1. Para subir o contesto completo do spring é necessário usar a anotação ``@SpringBootTest``
-2.
+
+## Classe MockMvc do Spring
+
+A classe MockMvc faz parte do framework Spring MVC Test, que é uma extensão do Spring Framework para facilitar a escrita
+de testes de integração para aplicativos web baseados em Spring MVC. O Spring MVC Test fornece várias classes e
+utilitários para simular o comportamento de um contêiner de servlet durante a execução dos testes, permitindo que você
+teste seus controladores e camada de web sem a necessidade de um contêiner real.
+
+A classe MockMvc é central nesse contexto. Ela é usada para simular as solicitações HTTP enviadas para seus
+controladores Spring MVC e permite que você verifique o comportamento do controlador, o conteúdo da resposta e outros
+aspectos da interação HTTP.
+
+O objetivo desse teste foi verificar se o código de resposta é 400 em um cenário de requisição inválida para agendar uma
+consulta.
+Além disso, foi a anotação @WithMockUser para simular um usuário logado durante o teste. Essa prática é essencial
+para garantir que a API está respondendo corretamente e tratando os erros de forma adequada.
+
 
 # V o l l . m e d _ A p i _ V 3 _ 
  
