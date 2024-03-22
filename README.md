@@ -99,7 +99,7 @@ usuário logado durante o teste.
 
 **Detalhes**
 
-1. Para subir o contesto completo do spring é necessário usar a anotação ``@SpringBootTest``
+1. Para subir o contexto completo do spring é necessário usar a anotação ``@SpringBootTest``
 
 ## Classe MockMvc do Spring
 
@@ -117,6 +117,45 @@ consulta.
 Além disso, foi a anotação @WithMockUser para simular um usuário logado durante o teste. Essa prática é essencial
 para garantir que a API está respondendo corretamente e tratando os erros de forma adequada.
 
+## JUnit o que é?
+
+O JUnit é um framework de teste unitário para a linguagem de programação Java. Desenvolvido originalmente por Erich
+Gamma e Kent Beck, é uma ferramenta popular entre os desenvolvedores Java para escrever e executar testes automatizados
+em seus códigos.
+
+Os testes unitários são partes essenciais da prática de desenvolvimento de software conhecida como TDD (Test-Driven
+Development) e BDD (Behavior-Driven Development). Eles ajudam os desenvolvedores a garantir que cada unidade individual
+de código (como métodos ou classes) funcione conforme o esperado, mesmo após alterações ou adições ao código.
+
+O JUnit fornece uma estrutura simples e intuitiva para escrever testes, com métodos de asserção para verificar se
+determinadas condições são verdadeiras. Ele também oferece anotações, como @Test, para marcar métodos de teste, e várias
+funcionalidades para configurar testes, como @Before, @After, @BeforeClass e @AfterClass, que permitem a execução de
+código de configuração e limpeza antes e depois dos testes.
+
+## @Teste para que serve?
+
+O @Test é uma anotação fornecida pelo framework JUnit, que é uma estrutura de teste unitário para a linguagem de
+programação Java. Quando você coloca a anotação @Test acima de um método em uma classe de teste, você está indicando ao
+JUnit que esse método contém um teste unitário a ser executado.
+
+O JUnit então executa todos os métodos anotados com @Test e relata quais passaram e quais falharam. Ele fornece uma
+estrutura simples e eficaz para escrever e executar testes unitários em código Java, o que é fundamental para garantir
+que seu código funcione corretamente e mantenha a qualidade ao longo do tempo, especialmente em projetos de grande
+escala onde mudanças podem ter efeitos colaterais inesperados.
+
+## Anotações para se testar uma classe controller
+
+![img.png](img.png)
+
+1. @SpringBootTest: é usada para indicar que um teste deve carregar a configuração completa da aplicação Spring durante
+   a execução do teste.
+
+2. @AutoConfigureMockMvc: é uma classe fornecida pelo Spring Test que permite simular solicitações HTTP e testar os
+   controladores MVC sem a necessidade de iniciar um contêiner de servlets real.
+
+3. @AutoConfigureJsonTesters:  é usada para configurar automaticamente os JacksonTesters no contexto do teste que são
+   usados para serializar e desserializar objetos JSON durante os testes, facilitando a comparação de objetos JSON
+   esperados e reais.
 
 # V o l l . m e d _ A p i _ V 3 _ 
  
