@@ -157,6 +157,26 @@ escala onde mudanças podem ter efeitos colaterais inesperados.
    usados para serializar e desserializar objetos JSON durante os testes, facilitando a comparação de objetos JSON
    esperados e reais.
 
+## Comandos para rodar o projeto no terminal
+
+**java -jar .\target\api-0.0.1-SNAPSHOT.jar**
+
+1. Por padrão ele subirá o aplcation.properties padrão, que não é o que queremos. Para poder definir o tipo de perfil a
+   ser usado basta adicionar o parâmetro:
+
+````text
+java -Dspring.profiles.active=prod -jar .\target\api-0.0.1-SNAPSHOT.jar
+
+ou para Windows (" comando entre aspas ")
+
+java "-Dspring.profiles.active=prod" -jar .\target\api-0.0.1-SNAPSHOT.jar
+
+outra forma com variáveis de hambiente
+
+java -Dspring.profiles.active=prod -DDATASOURCE_URL=jdbc:mysql://localhost/vollmed_api -DDATASOURCE_USERNAME=root -DDATASOURCE_PASSWORD=root -jar target/api-0.0.1-SNAPSHOT.jar
+
+````
+
 # V o l l . m e d _ A p i _ V 3 _ 
  
  
