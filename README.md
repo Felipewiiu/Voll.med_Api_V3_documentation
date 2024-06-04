@@ -94,8 +94,10 @@ public class AutenticacaoService implements UserDetailsService {
 
 **3- Ensinar o spring a não usar o processo de autenticação padrão criando a classe `securityFilterChain`**
 
-- Desabilite o csrf --> 
-- Configurar a aplicação para ser statless
+Criando a classe SecuryConfiguration, faça a configuração dos seguites passos:
+
+1- Desabilite o csrf --> 
+2- Configurar a aplicação para ser statless
 
 ````
 @Configuration
@@ -111,6 +113,10 @@ public class SecurityConfiguration {
 }
 
 ````
+
+3- Crie o método  AuthenticationManager que é resposável por ----------------
+
+**4- **
 
 ## Tipos de testes automatizados
 
