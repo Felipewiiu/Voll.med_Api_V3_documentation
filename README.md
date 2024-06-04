@@ -58,6 +58,40 @@ Instrutor: [Rodrigo Ferreira](https://cursos.alura.com.br/user/rodrigo-ferreira)
 
 ## SpringDoc
 
+## Configurando o spring security
+
+1- Adicionar a dependência no projeto:
+
+````
+<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+```
+
+2- Criar a classe de autenticação:
+
+OBS: Sempre que o usuário fazer login na aplicação ele chamará o método `UserDetailsService`, passando o username que vem do formulário de login
+`
+````
+@Service
+public class AutenticacaoService implements UserDetailsService {
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        return null;
+    }
+}
+
+```
+
 ## Tipos de testes automatizados
 
 1. Testes de Unidade (Unit Tests):
