@@ -92,6 +92,27 @@ public class AutenticacaoService implements UserDetailsService {
 
 ```
 
+3- Ensinar o spring a não usar o processo de autenticação padrão criando a classe `securityFilterChain`
+
+- Desabilite o csrf --> 
+- Configurar a aplicação para ser statless
+
+````
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfiguration {
+
+    @Bean//devolve um objeto para o spring
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        return http.csrf().disable()
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and().build();
+    }
+}
+
+````
+
 ## Tipos de testes automatizados
 
 1. Testes de Unidade (Unit Tests):
