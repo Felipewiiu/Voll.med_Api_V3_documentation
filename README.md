@@ -74,7 +74,7 @@ Instrutor: [Rodrigo Ferreira](https://cursos.alura.com.br/user/rodrigo-ferreira)
 			<scope>test</scope>
 		</dependency>
 
-```
+````
 
 2- Criar a classe de autenticação:
 
@@ -90,7 +90,7 @@ public class AutenticacaoService implements UserDetailsService {
     }
 }
 
-```
+````
 
 3- Ensinar o spring a não usar o processo de autenticação padrão criando a classe `securityFilterChain`
 
