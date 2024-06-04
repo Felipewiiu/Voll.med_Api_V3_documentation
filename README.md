@@ -79,7 +79,7 @@ Instrutor: [Rodrigo Ferreira](https://cursos.alura.com.br/user/rodrigo-ferreira)
 2- Criar a classe de autenticação:
 
 OBS: Sempre que o usuário fazer login na aplicação ele chamará o método `UserDetailsService`, passando o username que vem do formulário de login
-`
+
 ````
 @Service
 public class AutenticacaoService implements UserDetailsService {
