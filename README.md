@@ -96,8 +96,8 @@ public class AutenticacaoService implements UserDetailsService {
 
 Criando a classe SecuryConfiguration, faça a configuração dos seguites passos:
 
-1- Desabilite o csrf --> 
-2- Configurar a aplicação para ser statless
+1. Desabilite o csrf
+2. Configurar a aplicação para ser statless
 
 ````
 @Configuration
@@ -114,7 +114,9 @@ public class SecurityConfiguration {
 
 ````
 
-3- Crie o método  AuthenticationManager que é resposável por ----------------
+3. Crie o método  AuthenticationManager que é um componente central do framework que é responsável por processar as solicitações de autenticação. 
+
+4. Crie o método PasswordEncoder, que será responsável por realizar operações de codificação e verificação de senhas. Ele é crucial para assegurar que senhas não sejam armazenadas em texto plano no banco de dados, fornecendo um mecanismo de hashing seguro. 
 
 **4- **
 
