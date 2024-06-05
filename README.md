@@ -118,7 +118,14 @@ public class SecurityConfiguration {
 
 4. Crie o método PasswordEncoder, que será responsável por realizar operações de codificação e verificação de senhas. Ele é crucial para assegurar que senhas não sejam armazenadas em texto plano no banco de dados, fornecendo um mecanismo de hashing seguro. 
 
-**4- **
+**4- Criar a classe controller**
+
+1. Crie a classe controller para receber as requisições para a rota de login, onde precisamos injetar a classe `AuthenticationManager` que por sua vez precisa receber um objeto do tipo `UsernamePasswordAuthenticationToken` 
+
+**5- Criar a entidade usuário**
+
+1. A entidade usuário precisa implementar a classe `UserDetails` e implementar seus médodos obrigatórios.
+2. Trocar para true os metodos que retornam um Boolen.
 
 ## Tipos de testes automatizados
 
